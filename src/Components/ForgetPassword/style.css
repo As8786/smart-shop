@@ -1,0 +1,37 @@
+.forget-password-container{
+    width: 50%;
+    margin: auto;
+    max-width: 600px;
+    text-align: start;
+
+}
+
+.forget-password-container .title{
+    font-size: 2rem;
+    margin: 0 0 27px 0;
+    font-weight: bold;
+    background-clip: text;
+    background-image: linear-gradient(to right, #599fc5, #013b5a);
+    color: transparent;
+}
+
+.forget-password-container button{
+    color: white;
+    background-color: #007bbc;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 27px 0 0 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s ease
+}
+
+.forget-password-container button:hover{
+    background-color: #398ebd;
+}
+
+@media screen and (max-width : 1200px) {
+    .forget-password-container{
+        width: 80%
+    }
+}

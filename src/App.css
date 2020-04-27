@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.routes-container {
+  width : 100%;
+  height: 90%;
+  position: relative;
+  min-height: 70vh;
+  margin: auto;
+  padding-bottom: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.load-spinner{
+  min-height: 90vh;
+}
+
+.slider-closed-anim {
+  width: 0;
+  min-height: 100vh;
+  position: fixed;
+  animation-name: closeSlider;
+  animation-duration: 1s;
+  background-image: linear-gradient(to left, cadetblue, cadetblue);
+  z-index: 10000;
+  top: 40px;
+}
+
+@keyframes closeSlider{
+  from{
+    width: 350px;
+    
+  } to {
+    width:0px;
+
+  }
+}
+
+
+@media screen and (max-width : 1200px) {
+  .routes-container {
+    margin-top: 7px;
+    padding: 80px 0;
+  }
+  .slider-closed-anim {
+    top: 17px;
+  }
+
+} 
+

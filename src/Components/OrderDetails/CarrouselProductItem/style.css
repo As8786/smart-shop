@@ -1,0 +1,80 @@
+.carrousel-product-item-container{
+    min-width: 250px;
+    height: 300px;
+    box-shadow: 3px 3px 3px 3px #608294;
+    margin: 0 17px;
+    border-radius: 7px;
+    padding: 10px 7px;
+    position: relative;
+}
+
+.carrousel-product-item-container .number{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #ff9a9a;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.carrousel-product-item-container .image-container{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+}
+
+.carrousel-product-item-container .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.carrousel-product-item-container .infos{
+   margin-top: 7px;
+}
+
+.carrousel-product-item-container .infos .product-name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bbc;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.carrousel-product-item-container .infos .infos-item{
+    margin-left: 20px;
+    font-size: 0.7rem;
+    margin-bottom: 7px;
+}
+.carrousel-product-item-container .infos .infos-item .title{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: -17px;
+    margin-bottom: 3px;
+}
+.carrousel-product-item-container .infos .infos-item span{
+    font-size: 0.8rem;
+    font-weight: bold
+}
+
+
+@media screen and (max-width : 1200px) {
+
+.carrousel-product-item-container{
+
+}
+    .carrousel-product-item-container .infos .product-name{
+        font-size: 1.1rem;
+        height: 25px;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .carrousel-product-item-container{
+        min-width: 260px;
+        min-height: 350px;
+    }
+}

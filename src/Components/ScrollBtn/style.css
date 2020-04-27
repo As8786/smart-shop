@@ -1,0 +1,46 @@
+@media screen and (max-width : 768px) {
+    .scrollBtn-container-active{
+        bottom: 27px ! important;
+    }
+    .scrollBtn-container-active button{
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    .scrollBtn-container-active{
+        right: 17px !important;
+        bottom: 97px !important;
+    }
+}
+
+
+.scrollBtn-container-active{
+    position: fixed;
+    bottom: 117px;
+    right : 17px;
+    z-index: 1500000;
+}
+
+.scrollBtn-container-disabled {
+    display: none
+}
+
+
+.scrollBtn-container-active button{
+    border: none;
+    outline: none;
+    background-color: #0b7383;
+    border-radius: 500px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    padding-top: 7px;
+    width: 60px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.scrollBtn-container-active button:hover{
+    background-color: #09515c;
+}

@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom"
+
+import './index.css';
+import App from './App';
+import ScrollOnTop from './ScrollOnTop';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <ScrollOnTop>
+      <App />
+      </ScrollOnTop>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+

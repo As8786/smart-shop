@@ -1,0 +1,122 @@
+.products-categories-cards{
+    width: 100%;
+    position: absolute;
+    top : 700px;
+    right: 0;
+    left: 0;
+    height: 600px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.397), white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.products-categories-cards .section-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bbc;
+    margin-top: 20px;
+    margin-bottom : 50px;
+}
+
+.products-categories-cards .swiper-container{
+    width: 100%;
+}
+
+.products-categories-cards .swiper-wrapper{
+    margin: auto;
+    margin-bottom : 50px;
+} 
+
+.products-categories-cards .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-top: 25px;
+    cursor: w-resize
+}
+
+.products-categories-cards .swiper-slide .slide-name{
+    margin: 17px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bbc;
+
+}
+
+.products-categories-cards .swiper-slide .img-container{
+    width: 320px;
+    height: 280px;
+    margin: auto;
+}
+
+.products-categories-cards  .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 17px !important;
+}
+
+.products-categories-cards p{
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+}
+
+
+@media screen and (max-width :1200px) {
+    .products-categories-cards{
+        min-height: 400px;
+    }
+    .products-categories-cards .section-title{
+        font-size: 2.5rem;
+        margin-bottom : 30px;
+    }
+       
+}
+
+/* 
+@media screen and ( max-width : 1500px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -260px
+    } 
+}
+
+@media screen and ( max-width : 1400px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -380px
+    } 
+}
+@media screen and ( max-width : 1200px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -410px
+    } 
+}
+
+@media screen and ( max-width : 1100px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -430px
+    } 
+}
+
+@media screen and ( max-width : 1000px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -450px
+    } 
+}
+
+@media screen and ( max-width : 900px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -450px
+    } 
+}
+
+
+@media screen and ( max-width : 500px ) {
+    .products-categories-cards .swiper-wrapper{
+        margin-left: -660px
+    } 
+} */

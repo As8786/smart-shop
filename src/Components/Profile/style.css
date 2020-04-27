@@ -1,0 +1,284 @@
+.user-profile-container{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-profile-container .user-profile-content{
+    width: 700px;
+    margin-left: 75px;
+    margin-top: 47px;
+    position: relative;
+    box-shadow: 3px 5px 7px 7px #608294;
+    height: 470px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-profile-container .profile-img-container{
+    width: 320px;
+    height: 500px;
+    position: absolute;
+    top : -100px;
+    left: -75px;
+    box-shadow: 3px 5px 7px 7px #2487bd85;
+    border-radius: 7px;
+    z-index: 10;
+}
+
+.user-profile-container .profile-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.user-profile-container .profile-img-container .gradient{
+    position: absolute;
+    top : 0;
+    background-image: linear-gradient(to bottom,#f1f2f385, #0a82c227);
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.user-profile-container .profile-img-container .gradient img{
+    height:25px;
+    width:25px;
+    border-radius: 500px;
+    cursor: pointer;
+    margin: 0 0 12px 17px;
+}
+
+.user-profile-container .user-name{
+    position: absolute;
+    z-index: 100;
+    font-size: 3.5rem;
+    text-align: start;
+    font-weight: bold;
+    top: -75px;
+    left: 125px;
+    color: #01547e;
+}
+
+.user-profile-container .user-name span{
+    padding-left: 87px;
+}
+
+.user-profile-container .user-imformations{
+    padding: 97px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  0 57px 0 0;
+}
+
+.user-profile-content .user-imformations .section-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 17px 0;
+}
+
+.user-profile-content .user-imformations .user-imformations-item{
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    margin: 7px 0 7px 340px;
+}
+
+.user-profile-content .user-imformations .user-imformations-item label{
+    width: 20%;
+    border:none;
+    font-size: 1rem;
+    color: #007bbc;
+    font-weight: bold;
+}
+
+.user-profile-content .user-imformations .user-imformations-item .user-profile-input{
+    width: 80%;
+    position: relative;
+}
+
+.user-profile-content .user-imformations .user-imformations-item .user-profile-input  img{
+   position: absolute;
+   width: 20px;
+   right: 0;
+   cursor: pointer;
+}
+
+
+
+.user-profile-content .user-imformations .user-imformations-item .user-profile-input input:disabled{
+    border:none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    
+}
+
+#editable-input{
+    color: black !important;
+    border-color: #007bbc;
+    border-width: 2px;
+    
+}
+
+.user-profile-container .user-imformations button{
+    background: -webkit-linear-gradient(left, #007bbc 0%, rgb(12, 177, 202) 100%);
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    margin-top: 17px;
+    margin-left: 327px;
+    padding: 10px 20px 8px 20px;
+    transition: 0.25s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    animation: btn-update-appear;
+    animation-duration: 1.5s;
+}
+
+.user-profile-container .user-imformations button:hover{
+    background-color: #398ebd;
+}
+
+
+
+.user-profile-container .user-orders-stat{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding: 3px 0;
+}   
+
+.user-profile-container .user-orders-stat .user-orders-stat-item{
+    font-size: 1rem;
+    color: grey;
+}
+
+.user-profile-container .user-orders-stat .user-orders-stat-item span{
+   font-weight: bold;
+   font-size: 1.6rem;
+   color: #007bbc;
+}
+
+.user-profile-container #orders-hystory-link{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.4rem;
+    margin-left: 75px;
+    background: -webkit-linear-gradient(left, #007bbc 0%, rgb(12, 177, 202) 100%);
+    padding: 17px 27px;
+    border-radius: 0 0 7px 7px;
+}
+
+@media screen and (max-width : 900px) {
+    .user-profile-container .user-profile-content{
+        width: 80%;
+        margin-left: 0;
+        height: auto;
+        padding: 17px 0;
+    }
+
+    .user-profile-container .profile-img-container{
+        width: 320px;
+        height: 320px;
+        box-shadow: 3px 5px 7px 7px #2487bd85;
+        border-radius: 7px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .user-profile-container .user-name{
+        position: relative;
+        z-index: 100;
+        font-size: 2.5rem;
+        text-align: start;
+        font-weight: bold;
+        top: 0px;
+        left: 0px;
+        color: #01547e;
+        margin-top: 27px;
+    }
+
+    .user-profile-container .user-imformations{
+        padding: 0;
+        margin:  47px  0;
+        width: 90%;
+        text-align: start;
+    }
+
+    .user-profile-content .user-imformations .section-title{
+      width: 370px;
+      margin: auto;
+      font-size: 1.2rem;
+    }
+
+    .user-profile-content .user-imformations .user-imformations-item{
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: start;
+        margin: 7px auto;
+    }
+
+    .user-profile-content .user-imformations .user-imformations-item label{
+        font-size: 0.8rem;
+    }
+
+    .user-profile-content .user-imformations .user-imformations-item .user-profile-input input:disabled{  
+        font-size: 1rem;
+    }
+    
+    .user-profile-container .user-imformations button{
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .user-profile-container .user-orders-stat{
+        height: 40px;
+    }   
+    
+
+    .user-profile-container .user-orders-stat .user-orders-stat-item{
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .user-profile-container .user-orders-stat .user-orders-stat-item span{
+       font-size: 1.4rem;
+
+    }
+
+    .user-profile-container #orders-hystory-link{
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        margin-left:0px;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .user-profile-container .user-profile-content{
+        width: 90%;
+    }
+}
+
